@@ -2,7 +2,7 @@
 #include <vector>
 
 int main() {
-	std::cout << "Запуск оптимизированного алгоритма..." << std::endl;
+	std::cout << "Вывод из ветки experiment" << std::endl;
 	// Новый экспериментальный код
 	return 0;
 }
