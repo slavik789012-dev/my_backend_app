@@ -2,7 +2,6 @@
 #include <vector>
 
 int main() {
-	std::cout << "Вывод из ветки MAIN" << std::endl;
-	// Новый экспериментальный код
+	std::cout << "Конфликт успешно разрешен!" << std::endl;
 	return 0;
 }
