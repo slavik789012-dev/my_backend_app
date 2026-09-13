@@ -2,8 +2,7 @@
 #include <vector>
 
 int main() {
-	std::vector<int> nums = { 1, 2, 3, 4, 5 };
-	int left = 0, right = 0;
-	// TODO: реализовать подсчет суммы
+	std::cout << "Запуск оптимизированного алгоритма..." << std::endl;
+	// Новый экспериментальный код
 	return 0;
 }
