@@ -1,0 +1,25 @@
+name: C++ CMake Build
+
+# Запускать скрипт при каждом push в ветку main
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest # Выделяем сервер на Linux
+
+    steps:
+    - name: Скачивание кода (Checkout)
+      uses: actions/checkout@v3
+
+    - name: Создание папки build
+      run: mkdir build
+
+    - name: Конфигурация CMake
+      working-directory: ./build
+      run: cmake ..
+
+    - name: Компиляция проекта
+      working-directory: ./build
+      run: make
